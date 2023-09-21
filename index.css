@@ -1,0 +1,133 @@
+/* #region清除默认样式区域 */
+* {
+  font-family: Arial;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* #endregion清除默认样式区域 */
+
+/* #region整体样式区域 */
+/* body样式 */
+body {
+  background-image: url(./bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* #endregion整体样式区域 */
+
+/* #region头部菜单区域 */
+/* 头部菜单样式 */
+.header {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 头部菜单-右侧菜单样式 */
+.header ul {
+  display: flex;
+}
+
+/* 头部菜单-右侧菜单文字容器样式 */
+.header ul li {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/* 头部菜单-右侧菜单文字最后一个容器样式 */
+.header ul li:last-of-type {
+  margin-right: 0px;
+}
+
+/* 头部菜单-右侧菜单文字样式 */
+.header ul li a {
+  color: white;
+  font-size: 20px;
+}
+
+/* #endregion头部菜单区域 */
+
+/* #region内容区域 */
+/* 内容区*/
+.main {
+  height: calc(100vh - 70px);
+  display: flex;
+}
+
+/* 内容区-菜单容器  */
+.main ul {
+  width: 1000px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+/* 内容区-菜单*/
+.main li {
+  width: 180px;
+  height: 200px;
+  transition: 0.2s linear;
+  margin: auto;
+}
+
+/* 内容区-菜单hover  */
+.main li:hover {
+  box-shadow: 0px 0px 20px black;
+}
+
+/* 内容区-菜单*/
+.main li a {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 内容区-菜单文字  */
+.main li div {
+  color: white;
+  font-size: 20px;
+}
+
+/* 内容区-菜单背景颜色 */
+.main li:nth-child(1) {
+  background-color: #595CA8;
+}
+
+.main li:nth-child(2) {
+  background-color: #FF9D2E;
+}
+
+.main li:nth-child(3) {
+  background-color: #01A6DE;
+}
+
+.main li:nth-child(4) {
+  background-color: #015E91;
+}
+
+.main li:nth-child(5) {
+  background-color: #1DC128;
+}
+
+/* #endregion内容区域 */
